@@ -1,0 +1,23 @@
+{
+  "name": "web-qiankun",
+  "version": "1.0.0",
+  "description": "qiankun框架",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Core10900/Web-Qiankun.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Core10900/Web-Qiankun/issues"
+  },
+  "homepage": "https://github.com/Core10900/Web-Qiankun#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
