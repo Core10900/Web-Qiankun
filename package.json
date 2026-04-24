@@ -4,7 +4,10 @@
   "description": "qiankun框架",
   "main": "index.js",
   "scripts": {
-    "start:vue2": "cd projects/vue2-app && npm run serve"
+    "install:vue2": "cd projects/vue2-app && npm install",
+    "install:vue3": "cd projects/vue3-app && npm install",
+    "start:vue2": "cd projects/vue2-app && npm run serve",
+    "start:vue3": "cd projects/vue3-app && npm run serve"
   },
   "repository": {
     "type": "git",

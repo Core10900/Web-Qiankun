@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
+    "jsx": "preserve",
+    "ignoreDeprecations": "6.0"
+  },
+  "include": [
+    "src/**/*.js",
+    "src/**/*.vue",
+    "vite.config.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
