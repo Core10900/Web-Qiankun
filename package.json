@@ -4,7 +4,7 @@
   "description": "qiankun框架",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:vue2": "cd projects/vue2-app && npm run serve"
   },
   "repository": {
     "type": "git",
