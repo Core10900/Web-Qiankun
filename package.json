@@ -6,8 +6,10 @@
   "scripts": {
     "install:vue2": "cd projects/vue2-app && npm install",
     "install:vue3": "cd projects/vue3-app && npm install",
+    "install:all": "npm-run-all --parallel install:vue2 install:vue3",
     "start:vue2": "cd projects/vue2-app && npm run serve",
-    "start:vue3": "cd projects/vue3-app && npm run serve"
+    "start:vue3": "cd projects/vue3-app && npm run serve",
+    "start:all": "npm-run-all --parallel start:vue2 start:vue3"
   },
   "repository": {
     "type": "git",
