@@ -21,7 +21,7 @@ export default {
 <style scoped>
 .sys {
   width: 100%;
-  height: 100vh;
+  min-height: 100%;
   box-sizing: border-box;
   padding: 10px;
 }
@@ -32,6 +32,7 @@ export default {
   align-items: center;
   justify-content: center;
   height: 33px;
+  margin-bottom: 10px;
 }
 .sys .nav .item {
   display: inline-block;
@@ -41,14 +42,20 @@ export default {
   border-radius: 4px;
   text-decoration: none;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 .sys .nav .item:hover {
   background-color: #66b1ff;
 }
+.sys .nav .item.router-link-active {
+  background-color: #2d8cf0;
+}
 .sys .content {
   width: 100%;
-  height: calc(100% - 33px);
+  min-height: calc(100vh - 80px);
   box-sizing: border-box;
   padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
 }
 </style>

@@ -5,16 +5,12 @@
       <div class="logo">
         <h2>Main App</h2>
       </div>
-      <el-menu
-        :default-active="activeMenu"
-        class="el-menu-vertical"
-        router
-      >
+      <el-menu :default-active="activeMenu" class="el-menu-vertical" router>
         <el-menu-item index="/home">
           <el-icon><HomeFilled /></el-icon>
           <span>首页</span>
         </el-menu-item>
-        <el-menu-item index="/vue2">
+        <el-menu-item index="/vue2-app">
           <el-icon><View /></el-icon>
           <span>Vue2</span>
         </el-menu-item>
@@ -37,18 +33,19 @@
       <!-- 主要内容区域 -->
       <el-main>
         <router-view />
+        <div id="qiankun-container"></div>
       </el-main>
     </el-container>
   </el-container>
 </template>
 
 <script setup>
-import { computed } from 'vue'
-import { useRoute } from 'vue-router'
-import { HomeFilled, View } from '@element-plus/icons-vue'
+import { computed } from "vue";
+import { useRoute } from "vue-router";
+import { HomeFilled, View } from "@element-plus/icons-vue";
 
-const route = useRoute()
-const activeMenu = computed(() => route.path)
+const route = useRoute();
+const activeMenu = computed(() => route.path);
 </script>
 
 <style scoped>
@@ -110,5 +107,11 @@ const activeMenu = computed(() => route.path)
 .el-main {
   background-color: #f0f2f5;
   padding: 20px;
+}
+
+#qiankun-container {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
 }
 </style>

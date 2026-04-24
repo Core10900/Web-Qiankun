@@ -1,4 +1,4 @@
-import Router from "vue-router";
+// import Router from "vue-router";
 
 const routes = [
   {
@@ -19,8 +19,4 @@ const routes = [
   },
 ];
 
-export default new Router({
-  routes,
-  mode: "history",
-  base: "/",
-});
+export default routes;
