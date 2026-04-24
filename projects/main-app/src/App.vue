@@ -14,7 +14,7 @@
           <el-icon><View /></el-icon>
           <span>Vue2</span>
         </el-menu-item>
-        <el-menu-item index="/vue3">
+        <el-menu-item index="/vue3-vite-app">
           <el-icon><View /></el-icon>
           <span>Vue3</span>
         </el-menu-item>

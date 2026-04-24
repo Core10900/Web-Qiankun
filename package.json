@@ -8,10 +8,10 @@
     "install:vue3": "cd projects/vue3-app && npm install",
     "install:main": "cd projects/main-app && npm install",
     "install:all": "npm-run-all --parallel install:main install:vue2 install:vue3",
-    "start:main": "cd projects/main-app && npm run dev",
+    "start:main": "cd projects/main-app && npm run serve",
     "start:vue2": "cd projects/vue2-app && npm run serve",
     "start:vue3": "cd projects/vue3-app && npm run serve",
-    "start:all": "npm-run-all --parallel start:main start:vue2 start:vue3"
+    "start:all": "sh -c \"npm run start:vue2 & npm run start:vue3 & until curl --silent --head --fail http://localhost:4001 >/dev/null 2>&1; do sleep 1; done; until curl --silent --head --fail http://localhost:4002 >/dev/null 2>&1; do sleep 1; done; npm run start:main\""
   },
   "repository": {
     "type": "git",

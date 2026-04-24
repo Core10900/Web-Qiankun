@@ -10,15 +10,15 @@ const routes = [
     name: "Home",
     component: () => import("../views/Home.vue"),
   },
-  // {
-  //   path: '/vue2',
-  //   name: 'Vue2',
-  //   component: () => import('../views/Vue2.vue'),
-  // },
   {
-    path: "/vue3",
-    name: "Vue3",
-    component: () => import("../views/Vue3.vue"),
+    path: "/vue2-app",
+    name: "Vue2App",
+    component: () => import("../views/MicroAppView.vue"),
+  },
+  {
+    path: "/vue3-vite-app",
+    name: "Vue3ViteApp",
+    component: () => import("../views/MicroAppView.vue"),
   },
 ];
 

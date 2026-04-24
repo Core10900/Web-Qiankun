@@ -14,6 +14,12 @@ registerMicroApps([
     container: "#qiankun-container",
     activeRule: "/vue2-app",
   },
+  {
+    name: "vue3-vite-app", // app name registered
+    entry: "//localhost:4002",
+    container: "#qiankun-container",
+    activeRule: "/vue3-vite-app",
+  },
 ]);
 start();
 
